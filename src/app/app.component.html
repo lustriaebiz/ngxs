@@ -1,3 +1,11 @@
+
+<h3>Tutorials</h3>
+<ul>
+  <li (click)="delAnimal(animals.name)" *ngFor="let animals of animals$ | async">
+    {{ animals.name }} - {{animals.height}}
+  </li>
+</ul>
+
 <div class="left">
 
   <input type="text" placeholder="name" #name>
