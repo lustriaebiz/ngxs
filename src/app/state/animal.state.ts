@@ -2,9 +2,7 @@ import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { Animal } from "../interfaces/animal";
 import { AddAnimal, RemoveAnimal } from '../actions/animal.action'
 
-export class AnimalStateModel {
-    animals: Animal[];
-}
+
 
 @State<AnimalStateModel>({
     name: 'animals',
@@ -37,4 +35,8 @@ export class AnimalState {
         })
     }
 
+}
+
+export class AnimalStateModel {
+    animals: Animal[];
 }
