@@ -15,7 +15,7 @@ export class AnimalState {
 
     // Section 4
     @Selector()
-    static getTutorials(state: AnimalStateModel) {
+    static getAnimals(state: AnimalStateModel) {
         return state.animals
     }
 
